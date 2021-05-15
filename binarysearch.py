@@ -1,4 +1,5 @@
 # Exo5: Create an algo for the binary search
+
 t = range(1, 100)
 le = 0
 ri = len(t)-1
