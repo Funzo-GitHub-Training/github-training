@@ -7,7 +7,6 @@ appreciation = "?"
 
 while True:
     var = input("Enter a number :")
-
     var = int(var)
 
     if var < n :
@@ -25,5 +24,5 @@ while True:
         appreciation = "you win !"
 
         print(var, appreciation)
-        
+
         break
