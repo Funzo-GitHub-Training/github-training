@@ -1,3 +1,4 @@
+!#/usr/bin/python3
 import random
 cMagic = random.randint(0, 100) 
 
