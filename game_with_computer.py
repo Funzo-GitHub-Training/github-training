@@ -15,5 +15,4 @@ while x != y:
      y = int(input("wrong your number is lower than mine.Enter another one! "))
 
 if x == y:
-  print("Good number.")
-  
+  print("Good number.")  
