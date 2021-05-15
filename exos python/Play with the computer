@@ -1,0 +1,13 @@
+#play with the computer
+from random import*
+n=randint(0,100)
+J=-1
+while J!=n:
+    J=int(input("Entre un nombre: "))
+    if J>n:
+        print("le nombre recherché est plus petit")
+    elif J<n:
+        print("le nombre recherché est plus grand")
+    else:
+        print("trouvé")
+        

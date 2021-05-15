@@ -1,0 +1,22 @@
+#Binary search
+List=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+#Recherche d'un nombre avec la méthode de Binary search
+def recherche_dichotomique(List,x):
+    """Liste en ordre croissant; si x est dans la liste alors renvoie une position i correspondante, sinon renvoie None"""
+    fini= False #indique si la recherche est terminée
+    position=None #indice de x si trouvée, None sinon
+    début=0 #début intervalle de recherche
+    fin= len(List)-1 #fin intervalle de recherche
+    y=int(input("entrez un nombre"))
+    while not fini:
+        y=int((début+fin)/2)
+        if x < y:
+            fin=y-1
+        elif x > y:
+            début=y+1
+        elif x==int(List[y]):
+            position=y
+            fini=True
+
+recherche_dichotomique(List,11)
