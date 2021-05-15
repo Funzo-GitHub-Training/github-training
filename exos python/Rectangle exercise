@@ -1,0 +1,49 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+#fonction qui recherche la longeur (L) et la largeur (l) parmis les nombres donnés
+
+List=[3,9,7,5,2]
+
+def recherche_longeur_et_largeur(List):
+    List.sort()
+    print(List)
+    largeur=List[0]
+    Longeur=List[1]
+    del List[0:2]
+    print(List)
+    Lista=List
+    print(Lista)
+    print("la largeur est:",largeur)
+    
+recherche_longeur_et_largeur(List)
+
+Longeur=3
+largeur=2
+
+#calculons les dimensions de notre rectangle
+def calcul_de_dimensions(Longeur,largeur):
+    périmètre=(int(Longeur)+(largeur))*2
+    print(périmètre)
+    surface=int(Longeur)*int(largeur)
+    print(surface)
+    import math
+    Diagonale= math.sqrt((int(Longeur)**2)+(int(largeur)**2))
+    diagonale=int(Diagonale)
+    Listb=[périmètre,surface,diagonale]
+    print(Listb)
+    
+calcul_de_dimensions(3,2)
+
+#faisons la correspondance des deux listes
+Lista=[5,7,9]
+Listb=[10,6,3]
+def correspondance_listes(Lista,Listb):
+    for x in Listb:
+        if x in Lista:
+            print(x in Lista)
+            print(Lista.index(x))
+            list.pop(Lista.index(x))
+        else:
+            print("ce ne sont pas les caractéristiques d'un rectangle")
+            
+correspondance_listes(Lista,Listb)
