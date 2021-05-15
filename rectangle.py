@@ -1,5 +1,6 @@
 from math import sqrt
 
+#this function find if parameters are for a same rectange
 def is_rectangle(a, b, c, d, e):
     dico = {}
     
